@@ -5,8 +5,8 @@ from db import get_session
 
 # 🧱 Model
 class levels(SQLModel, table=True):
-    level_id: int | None = Field(default=None, primary_key=True)
-    level_name: str
+    id: int | None = Field(default=None, primary_key=True)
+    name: str
     description: str | None = None
     order_index: int | None = None
 
